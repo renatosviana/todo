@@ -40,8 +40,6 @@ public class UserController {
 		//retrieveAllUsers
 		Resource<User> resource = new Resource<User>(user);
 		
-		
-		
 		ControllerLinkBuilder linkTo = linkTo(methodOn(this.getClass()).retrieveAllUsers());
 		
 		resource.add(linkTo.withRel("all-users"));
